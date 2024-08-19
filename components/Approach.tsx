@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
@@ -79,7 +80,7 @@ const Card = ({
   children?: React.ReactNode;
   des: string;
 }) => {
-  const [hovered, setHovered] = React.useState(false);
+  const [hovered, setHovered] = useState(false);
   return (
     <div
       onMouseEnter={() => setHovered(true)}
@@ -200,5 +201,5 @@ export const Icon = ({ className, ...rest }: any) => {
     </svg>
   );
 };
- 
+
 export default Approach;
