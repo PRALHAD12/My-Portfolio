@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -65,7 +66,7 @@ const Approach = () => {
   );
 };
 
-// export default Approach;
+export default Approach;
 
 const Card = ({
   title,
@@ -200,5 +201,5 @@ export const Icon = ({ className, ...rest }: any) => {
     </svg>
   );
 };
- 
-export default Approach;
+
+// export default Approach
